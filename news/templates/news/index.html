@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'news/img/favicon.ico' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'news/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'news/css/style.css' %}">
+    <title>Арай Studio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#"><img class="logo__img" src="{% static 'news/img/logo.svg' %}" alt="logo"></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a data-nav class="nav__item-link" href="#about">Обо мне</a></li>
+                        <li class="nav__item"><a data-nav class="nav__item-link" href="#advantages">Преимущества</a></li>
+                        <li class="nav__item"><a data-nav class="nav__item-link" href="#gallery">Работы</a></li>
+                        <li class="nav__item"><a data-nav class="nav__item-link" href="#tariffs">Тарифы</a></li>
+                        <li class="nav__item"><a data-nav class="nav__item-link" href="#review">Отзывы</a></li>
+                        <li class="nav__item"><a data-modal class="btn header__btn">Связаться со мной</a></li>
+                    </ul>
+                </nav>
+                    
+                <div class="menu"><span></span></div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <main class="main">
+        <div class="main__slider">
+            <div class="main__slide">
+                <img src="{% static 'news/img/slider_img/slider-1.jpg' %}" alt="photo">
+            </div>
+            <div class="main__slide">
+                <img src="{% static 'news/img/slider_img/slider-2.jpg' %}" alt="photo">
+            </div>
+            <div class="main__slide">
+                <img src="{% static 'news/img/slider_img/slider-3.jpg' %}" alt="photo">
+            </div>
+            <div class="main__slide">
+                <img src="{% static 'news/img/slider_img/slider-4.jpg' %}" alt="photo">
+            </div>
+            <div class="main__slide">
+                <img src="{% static 'news/img/slider_img/slider-5.jpg' %}" alt="photo">
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="main__prev"><img src="{% static 'news/img/prevArrow.svg' %}" alt="prev"></div>
+        <div class="main__next"><img src="{% static 'news/img/nextArrow.svg' %}" alt="next"></div>
+        <div class="main__content">
+            <h1 class="main__subtitle">Фотостудия Арай</h1>
+            <h1 class="main__title">Создаем вечные моменты красоты</h1>
+            <a data-modal class="btn" >Связаться со мной</a>
+        </div>
+    </main>
+    <section id="about" class="about">
+        <div class="container">
+            <h1 class="section__title">Обо мне</h1>
+            <div class="about__inner">
+                <img src="{% static 'news/img/about.jpg' %}" alt="me" class="about__img">
+                <div class="about__content">
+                    <h2 class="about__title">Ажимбаев Арай</h2>
+                    <span class="about__prof">— Основатель студии</span>
+                    <p class="about__text">Добро пожаловать в мой творческий мир, где фотография становится воплощением красоты и эмоций. С искренним увлечением и профессионализмом я стремлюсь запечатлеть ваши самые важные моменты, создавая вечные снимки, которые будут радовать вас и ваших близких на протяжении долгих лет. Каждая сессия для меня – это уникальное путешествие, где я стараюсь раскрыть вашу индивидуальность, естественную красоту и гармонию. Моей целью является выражение сильных эмоций и глубоких чувств в каждом кадре, чтобы передать вашу уникальную историю.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h1 class="section__title">Почему мы?</h1>
+            <div class="advantages__inner">
+                <div class="advantages__item">
+                    <img src="{% static 'news/img/quality.svg' %}" alt="quality" class="advantages__img">
+                    <div class="advantages__content">
+                        <h3 class="advantages__title">Качество</h3>
+                        <p class="advantages__text">Наши фотографии отличаются выдающимся качеством, воплощая в себе магию момента, привнося неповторимую яркость и эмоциональную глубину, чтобы сохранить воспоминания в их самой прекрасной форме</p>
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="{% static 'news/img/price.svg' %}" alt="price" class="advantages__img">
+                    <h3 class="advantages__title">Цена</h3>
+                    <p class="advantages__text">Убедитесь сами, что качество не обязательно дорого - наши фотографии предлагаются по привлекательной цене, доступной для каждого клиента</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="{% static 'news/img/time.svg' %}" alt="time" class="advantages__img">
+                    <h3 class="advantages__title">Время</h3>
+                    <p class="advantages__text">Важность вашего времени понимаем на все 100%: наша команда усердно трудится, чтобы оперативно и безупречно создать для вас восхитительные фотографии, ибо ваша удовлетворенность - наш приоритет</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="{% static 'news/img/guarantee.svg' %}" alt="guarantee" class="advantages__img">
+                    <h3 class="advantages__title">Гарантия</h3>
+                    <p class="advantages__text">Мы гарантируем сохранность и безопасность ваших ценных материалов: каждая фотография обрабатывается и сразу хранится в резервной копии с возможностью полного восстановления.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h1 class="section__title">Галерея</h1>
+        <div class="gallery__inner">
+            <a target="_blank" href="{% static 'news/img/works_img/model stay.png' %}" class="gallery__item">
+                <div class="gallery__item-hover">Посмотреть</div>
+                <img src="{% static 'news/img/works_img/model stay.png' %}" alt="picture">
+            </a>
+            <a target="_blank" href="{% static 'news/img/works_img/ofik.png' %}" class="gallery__item">
+                <div class="gallery__item-hover">Посмотреть</div>
+                <img src="{% static 'news/img/works_img/ofik.png' %}" alt="picture">
+            </a>
+            <a target="_blank" href="{% static 'news/img/works_img/jannur.png' %}" class="gallery__item">
+                <div class="gallery__item-hover">Посмотреть</div>
+                <img src="{% static 'news/img/works_img/jannur.png' %}" alt="picture">
+            </a>
+            <a target="_blank" href="{% static 'news/img/works_img/barmen.png' %}" class="gallery__item">
+                <div class="gallery__item-hover">Посмотреть</div>
+                <img src="{% static 'news/img/works_img/barmen.png' %}" alt="picture">
+            </a>
+            <a target="_blank" href="{% static 'news/img/works_img/model sit.png' %}" class="gallery__item">
+                <div class="gallery__item-hover">Посмотреть</div>
+                <img src="{% static 'news/img/works_img/model sit.png' %}" alt="picture">
+            </a>
+            <a target="_blank" href="{% static 'news/img/works_img/kalyan.png' %}" class="gallery__item">
+                <div class="gallery__item-hover">Посмотреть</div>
+                <img src="{% static 'news/img/works_img/kalyan.png' %}" alt="picture">
+            </a>
+            <a target="_blank" href="{% static 'news/img/works_img/geysha close.png' %}" class="gallery__item">
+                <div class="gallery__item-hover">Посмотреть</div>
+                <img src="{% static 'news/img/works_img/geysha close.png' %}" alt="picture">
+            </a>
+            <a target="_blank" href="{% static 'news/img/works_img/geysha open.png' %}" class="gallery__item">
+                <div class="gallery__item-hover">Посмотреть</div>
+                <img src="{% static 'news/img/works_img/geysha open.png' %}" alt="picture">
+            </a>
+        </div>
+    </div>
+</section>
+        <h1 class="section__title">Тарифы</h1>
+    <section id="tariffs" class="tariffs">  
+        <div class="container">
+            <div class="tariffs__inner">
+                <div class="tariffs__item">
+                    <div class="tariffs__header">
+                        <h3 class="tariffs__title">Стандарт</h3>
+                        <span class="tariffs__price">7000 тг/час</span>
+                    </div>
+                    <ul class="tariffs__list">
+                        <li class="tariffs__conditions">Профессиональная студия</li>
+                        <li class="tariffs__conditions">Консультация с фотографом</li>
+                        <li class="tariffs__conditions">Фотосессия в любой точке Актау</li>
+                        <li class="tariffs__conditions">Стильное оформление</li>
+                        <li class="tariffs__conditions">Цифровая копия</li>
+                        <li class="tariffs__conditions">3 месяца гарантий сахранности ваших материалов</li>
+                    </ul>
+                </div>
+                
+                <div class="tariffs__item">
+                    <div class="tariffs__header">
+                        <h3 class="tariffs__title">Полный день</h3>
+                        <span class="tariffs__price">30000 тг/день</span>
+                    </div>
+                    <ul class="tariffs__list">
+                        <li class="tariffs__conditions">Профессиональная студия</li>
+                        <li class="tariffs__conditions">Консультация с фотографом</li>
+                        <li class="tariffs__conditions">Фотосессия в любой точке Актау</li>
+                        <li class="tariffs__conditions">Стильное оформление</li>
+                        <li class="tariffs__conditions">Цифровая копия</li>
+                        <li class="tariffs__conditions">3 месяца гарантий сахранности ваших материалов</li>
+                    </ul>
+                </div>
+
+                <div class="tariffs__item tariffs__vip">
+                    <div class="tariffs__header">
+                        <h3 class="tariffs__title">VIP</h3>
+                        <span class="tariffs__price">70000 тг/день</span>
+                    </div>
+                    <ul class="tariffs__list">
+                        <li class="tariffs__conditions">Профессиональная студия</li>
+                        <li class="tariffs__conditions">Консультация с фотографом</li>
+                        <li class="tariffs__conditions">Фотосессия в любой точке Актау</li>
+                        <li class="tariffs__conditions">Стильное оформление</li>
+                        <li class="tariffs__conditions">Цифровая копия</li>
+                        <li class="tariffs__conditions">Фотопрезентация из ваших фотографий</li>
+                        <li class="tariffs__conditions">1 год гарантий сахранности ваших материалов</li>
+                        <li class="tariffs__conditions">Допольнительные съемки по вашей тематике</li> 
+                        <li class="tariffs__conditions">Скидка 10% на следущие посещения</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="section__title review__title">Отзывы о нас</h1>
+    <section id="review" class="review">
+        <div class="container">
+            <div class="reviews__inner">
+                <div class="review__item">
+                    <img src="{% static 'news/img/review-1.png' %}" alt="avatar" class="review__img">
+                    <div class="review__comment">
+                        <h3 class="review__author">Жандос Абдрахманов</h3>
+                        <p class="review__text">"Отличная фотостудия! Полностью удовлетворен своим опытом здесь. Качество ретуши и обработки фотографий на высоком уровне. Мне понравилось, что студия предложила несколько вариантов фона, что добавило разнообразия в снимки. Буду рекомендовать эту фотостудию своим друзьям и коллегам!"</p>
+                    </div>
+                </div>
+                <div class="review__item-reverse">
+                    <img src="{% static 'news/img/review-2.png' %}" alt="avatar" class="review__img-reverse">
+                    <div class="review__com"></div>
+                    <div class="review__comment-reverse">
+                        <h3 class="review__author">Динара Казбекова</h3>
+                        <p class="review__text">"Посетила эту фотостудию и результат меня поразила. Фотографы проявили креативность и искусство в каждой снимке. Работая в спокойной и дружественной обстановке, получила отличный опыт и потрясающие фотки. Однозначно рекомендую эту фотостудию каждому, кто ценит качественную работу и профессионализм!"</p>
+                    </div>
+                </div>
+                <div class="review__item">
+                    <img src="{% static 'news/img/review-3.jpg' %}" alt="avatar" class="review__img">
+                    <div class="review__comment">
+                        <h3 class="review__author">Асылбек Кожахметов</h3>
+                        <p class="review__text">"Это был мой первый опыт фотосессии, и я был немного волновался. Но сотрудники фотостудии сделали все возможное, чтобы я чувствовал себя комфортно и расслаблено. Фотограф проявил терпение и помогал с позированием, чтобы я получил более лучшие снимки. С нетерпением жду следующей фотосессии. "</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__content">
+                    <a class="logo footer__logo" href="#"><img class="logo__img" src="{% static 'news/img/logo.svg' %}" alt="logo"></a>
+                    <span class="footer__contract">Наш адрес:</span>
+                    <p class="footer__text">г. Актау 26мкр. 61 дом</p>
+                    <span class="footer__contract">Наши контакты:</span>
+                    <a class="footer__text" href="tel:+77078124109">+7 (707) 812 4109</a>
+                    <a class="footer__text" href="tel:+77292264698">+7 (7292) 26-46-98 </a>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a data-nav href="#about">Обо мне</a></li>
+                        <li class="footer__nav-item"><a data-nav href="#advantages">Преимущества</a></li>
+                        <li class="footer__nav-item"><a data-nav href="#gallery">Работы</a></li>
+                        <li class="footer__nav-item"><a data-nav href="#tariffs">Тарифы</a></li>
+                        <li class="footer__nav-item"><a data-nav href="#review">Отзывы</a></li>
+                    </ul>
+                </div>
+               <form action="{% url 'news:connect_with_us' %}"method="post" class="footer__reg">
+                    {% csrf_token %}
+                    <h3 class="footer__title">Свяжитесь с нами</h3>
+                    <p class="footer__reg-text">Если у вас остались вопросы, то сразу напишите вам или оставьте ваши данные:</p>
+                    <div class="footer__submit">
+                        <input name="phone" type="phone" required placeholder="Ваш номер телефона" class="footer__input">
+                        <button type="submit" class="footer__btn" name="submit">Отправить</button>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.instagram.com/ar.azmbv/" target="_blank" class="social__link"><img src="img/instagram.svg" alt="instagram"></a>
+                        <a href="#" target="_blank" class="social__link"><img src="img/vk.svg" alt="vk"></a>
+                        <a href="https://t.me/Idipospy" target="_blank" class="social__link"><img src="img/telegram.svg" alt="telegram"></a>
+                    </div>
+                </form> 
+            </div>
+            <div class="footer__line"></div>
+            <span></span>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="{% url 'news:connect_with_us' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button class="btn modal__btn">Перезвонить мне</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'news/css/script.js' %}"></script>
+</body>
+</html>
+

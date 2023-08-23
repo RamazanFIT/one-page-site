@@ -9,4 +9,6 @@ class CustomUser(AbstractUser):
 
 
 
+class PhonesOfClient(models.Model):
+    phone = models.CharField(max_length=30)
 
