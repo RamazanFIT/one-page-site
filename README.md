@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/cUvpsXVG)
+To engine this project do next commands:
+1) write to console (poetry shell)
+2)Then write (poetry install)
+3)Just write (python manage.py runserver) to run local server
+4) Join to locahost/news/main_page to view page of the site
